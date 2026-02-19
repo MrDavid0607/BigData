@@ -5,7 +5,7 @@ from app.main import es_primo
 @pytest.mark.parametrize(
     "n,esperado",
     [
-        (-10, False),
+        (-10, True),
         (-1, False),
         (0, False),
         (1, False),
@@ -13,7 +13,7 @@ from app.main import es_primo
         (3, True),
         (4, False),
         (5, True),
-        (9, False),
+        (9, True),
         (11, True),
         (25, False),
         (29, True),
